@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{45EFC489-E700-4424-B090-958CB20195B3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="sqlBağlanti.cs" />
+    <Compile Include="Tasarımlar\KullaniciPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tasarımlar\KullaniciPanel.Designer.cs">
+      <DependentUpon>KullaniciPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tasarımlar\BiletBilgi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tasarımlar\BiletBilgi.Designer.cs">
+      <DependentUpon>BiletBilgi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tasarımlar\MüşteriBilgi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tasarımlar\MüşteriBilgi.Designer.cs">
+      <DependentUpon>MüşteriBilgi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tasarımlar\KullanıcıGirişForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tasarımlar\KullanıcıGirişForm.Designer.cs">
+      <DependentUpon>KullanıcıGirişForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tasarımlar\SeçimEkranıForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tasarımlar\SeçimEkranıForm.Designer.cs">
+      <DependentUpon>SeçimEkranıForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tasarımlar\BiletİptalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tasarımlar\BiletİptalForm.Designer.cs">
+      <DependentUpon>BiletİptalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tasarımlar\BiletSatınalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tasarımlar\BiletSatınalForm.Designer.cs">
+      <DependentUpon>BiletSatınalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tasarımlar\YöneiciPanaliForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tasarımlar\YöneiciPanaliForm.Designer.cs">
+      <DependentUpon>YöneiciPanaliForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tasarımlar\KullanıcıKayıtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tasarımlar\KullanıcıKayıtForm.Designer.cs">
+      <DependentUpon>KullanıcıKayıtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tasarımlar\KullancıSilmeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tasarımlar\KullancıSilmeForm.Designer.cs">
+      <DependentUpon>KullancıSilmeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tasarımlar\AraçKayıtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tasarımlar\AraçKayıtForm.Designer.cs">
+      <DependentUpon>AraçKayıtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tasarımlar\YöneticiKayıtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tasarımlar\YöneticiKayıtForm.Designer.cs">
+      <DependentUpon>YöneticiKayıtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tasarımlar\YüklenmForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tasarımlar\YüklenmForm.Designer.cs">
+      <DependentUpon>YüklenmForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tasarımlar\Ödeme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tasarımlar\Ödeme.Designer.cs">
+      <DependentUpon>Ödeme.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Tasarımlar\KullaniciPanel.resx">
+      <DependentUpon>KullaniciPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tasarımlar\BiletBilgi.resx">
+      <DependentUpon>BiletBilgi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tasarımlar\MüşteriBilgi.resx">
+      <DependentUpon>MüşteriBilgi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tasarımlar\KullanıcıGirişForm.resx">
+      <DependentUpon>KullanıcıGirişForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tasarımlar\SeçimEkranıForm.resx">
+      <DependentUpon>SeçimEkranıForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tasarımlar\BiletİptalForm.resx">
+      <DependentUpon>BiletİptalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tasarımlar\BiletSatınalForm.resx">
+      <DependentUpon>BiletSatınalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tasarımlar\YöneiciPanaliForm.resx">
+      <DependentUpon>YöneiciPanaliForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tasarımlar\KullanıcıKayıtForm.resx">
+      <DependentUpon>KullanıcıKayıtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tasarımlar\KullancıSilmeForm.resx">
+      <DependentUpon>KullancıSilmeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tasarımlar\AraçKayıtForm.resx">
+      <DependentUpon>AraçKayıtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tasarımlar\YöneticiKayıtForm.resx">
+      <DependentUpon>YöneticiKayıtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Tasarımlar\YüklenmForm.resx">
+      <DependentUpon>YüklenmForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tasarımlar\Ödeme.resx">
+      <DependentUpon>Ödeme.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
