@@ -98,9 +98,9 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(11, 80);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 13);
+            this.label2.Size = new System.Drawing.Size(46, 13);
             this.label2.TabIndex = 29;
-            this.label2.Text = "KULLANICI NO :";
+            this.label2.Text = "TC NO :";
             // 
             // button7
             // 
@@ -116,6 +116,7 @@
             this.button7.Text = "        KULLANICI SİL";
             this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // KayıtSilmeForm
             // 
@@ -133,6 +134,7 @@
             this.ForeColor = System.Drawing.Color.DarkRed;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "KayıtSilmeForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "KULLANICI SİLME  EKRANI";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

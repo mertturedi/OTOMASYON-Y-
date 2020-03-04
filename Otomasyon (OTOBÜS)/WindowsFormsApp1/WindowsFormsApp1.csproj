@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Tasarımlar\SifreEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tasarımlar\SifreEkrani.Designer.cs">
+      <DependentUpon>SifreEkrani.cs</DependentUpon>
+    </Compile>
     <Compile Include="sqlBağlanti.cs" />
     <Compile Include="Tasarımlar\KullaniciPanel.cs">
       <SubType>Form</SubType>
@@ -60,23 +66,23 @@
     <Compile Include="Tasarımlar\BiletBilgi.Designer.cs">
       <DependentUpon>BiletBilgi.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tasarımlar\MüşteriBilgi.cs">
+    <Compile Include="Tasarımlar\MusteriBilgi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tasarımlar\MüşteriBilgi.Designer.cs">
-      <DependentUpon>MüşteriBilgi.cs</DependentUpon>
+    <Compile Include="Tasarımlar\MusteriBilgi.Designer.cs">
+      <DependentUpon>MusteriBilgi.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tasarımlar\KullanıcıGirişForm.cs">
+    <Compile Include="Tasarımlar\KullaniciGirisForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tasarımlar\KullanıcıGirişForm.Designer.cs">
-      <DependentUpon>KullanıcıGirişForm.cs</DependentUpon>
+    <Compile Include="Tasarımlar\KullaniciGirisForm.Designer.cs">
+      <DependentUpon>KullaniciGirisForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tasarımlar\SeçimEkranıForm.cs">
+    <Compile Include="Tasarımlar\SecimEkraniForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tasarımlar\SeçimEkranıForm.Designer.cs">
-      <DependentUpon>SeçimEkranıForm.cs</DependentUpon>
+    <Compile Include="Tasarımlar\SecimEkraniForm.Designer.cs">
+      <DependentUpon>SecimEkraniForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Tasarımlar\BiletİptalForm.cs">
       <SubType>Form</SubType>
@@ -84,23 +90,23 @@
     <Compile Include="Tasarımlar\BiletİptalForm.Designer.cs">
       <DependentUpon>BiletİptalForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tasarımlar\BiletSatınalForm.cs">
+    <Compile Include="Tasarımlar\BiletSatinalForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tasarımlar\BiletSatınalForm.Designer.cs">
-      <DependentUpon>BiletSatınalForm.cs</DependentUpon>
+    <Compile Include="Tasarımlar\BiletSatinalForm.Designer.cs">
+      <DependentUpon>BiletSatinalForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tasarımlar\YöneiciPanaliForm.cs">
+    <Compile Include="Tasarımlar\YoneiciPanaliForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tasarımlar\YöneiciPanaliForm.Designer.cs">
-      <DependentUpon>YöneiciPanaliForm.cs</DependentUpon>
+    <Compile Include="Tasarımlar\YoneiciPanaliForm.Designer.cs">
+      <DependentUpon>YoneiciPanaliForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tasarımlar\KullanıcıKayıtForm.cs">
+    <Compile Include="Tasarımlar\KullaniciKayitForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tasarımlar\KullanıcıKayıtForm.Designer.cs">
-      <DependentUpon>KullanıcıKayıtForm.cs</DependentUpon>
+    <Compile Include="Tasarımlar\KullaniciKayitForm.Designer.cs">
+      <DependentUpon>KullaniciKayitForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Tasarımlar\KullancıSilmeForm.cs">
       <SubType>Form</SubType>
@@ -108,67 +114,70 @@
     <Compile Include="Tasarımlar\KullancıSilmeForm.Designer.cs">
       <DependentUpon>KullancıSilmeForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tasarımlar\AraçKayıtForm.cs">
+    <Compile Include="Tasarımlar\AraçKayitForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tasarımlar\AraçKayıtForm.Designer.cs">
-      <DependentUpon>AraçKayıtForm.cs</DependentUpon>
+    <Compile Include="Tasarımlar\AraçKayitForm.Designer.cs">
+      <DependentUpon>AraçKayitForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tasarımlar\YöneticiKayıtForm.cs">
+    <Compile Include="Tasarımlar\YoneticiKayıtForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tasarımlar\YöneticiKayıtForm.Designer.cs">
-      <DependentUpon>YöneticiKayıtForm.cs</DependentUpon>
+    <Compile Include="Tasarımlar\YoneticiKayıtForm.Designer.cs">
+      <DependentUpon>YoneticiKayıtForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tasarımlar\YüklenmForm.cs">
+    <Compile Include="Tasarımlar\YuklenmForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tasarımlar\YüklenmForm.Designer.cs">
-      <DependentUpon>YüklenmForm.cs</DependentUpon>
+    <Compile Include="Tasarımlar\YuklenmForm.Designer.cs">
+      <DependentUpon>YuklenmForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tasarımlar\Ödeme.cs">
+    <Compile Include="Tasarımlar\Odeme.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tasarımlar\Ödeme.Designer.cs">
-      <DependentUpon>Ödeme.cs</DependentUpon>
+    <Compile Include="Tasarımlar\Odeme.Designer.cs">
+      <DependentUpon>Odeme.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Tasarımlar\SifreEkrani.resx">
+      <DependentUpon>SifreEkrani.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tasarımlar\KullaniciPanel.resx">
       <DependentUpon>KullaniciPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tasarımlar\BiletBilgi.resx">
       <DependentUpon>BiletBilgi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Tasarımlar\MüşteriBilgi.resx">
-      <DependentUpon>MüşteriBilgi.cs</DependentUpon>
+    <EmbeddedResource Include="Tasarımlar\MusteriBilgi.resx">
+      <DependentUpon>MusteriBilgi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Tasarımlar\KullanıcıGirişForm.resx">
-      <DependentUpon>KullanıcıGirişForm.cs</DependentUpon>
+    <EmbeddedResource Include="Tasarımlar\KullaniciGirisForm.resx">
+      <DependentUpon>KullaniciGirisForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Tasarımlar\SeçimEkranıForm.resx">
-      <DependentUpon>SeçimEkranıForm.cs</DependentUpon>
+    <EmbeddedResource Include="Tasarımlar\SecimEkraniForm.resx">
+      <DependentUpon>SecimEkraniForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tasarımlar\BiletİptalForm.resx">
       <DependentUpon>BiletİptalForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Tasarımlar\BiletSatınalForm.resx">
-      <DependentUpon>BiletSatınalForm.cs</DependentUpon>
+    <EmbeddedResource Include="Tasarımlar\BiletSatinalForm.resx">
+      <DependentUpon>BiletSatinalForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Tasarımlar\YöneiciPanaliForm.resx">
-      <DependentUpon>YöneiciPanaliForm.cs</DependentUpon>
+    <EmbeddedResource Include="Tasarımlar\YoneiciPanaliForm.resx">
+      <DependentUpon>YoneiciPanaliForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Tasarımlar\KullanıcıKayıtForm.resx">
-      <DependentUpon>KullanıcıKayıtForm.cs</DependentUpon>
+    <EmbeddedResource Include="Tasarımlar\KullaniciKayitForm.resx">
+      <DependentUpon>KullaniciKayitForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tasarımlar\KullancıSilmeForm.resx">
       <DependentUpon>KullancıSilmeForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Tasarımlar\AraçKayıtForm.resx">
-      <DependentUpon>AraçKayıtForm.cs</DependentUpon>
+    <EmbeddedResource Include="Tasarımlar\AraçKayitForm.resx">
+      <DependentUpon>AraçKayitForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Tasarımlar\YöneticiKayıtForm.resx">
-      <DependentUpon>YöneticiKayıtForm.cs</DependentUpon>
+    <EmbeddedResource Include="Tasarımlar\YoneticiKayıtForm.resx">
+      <DependentUpon>YoneticiKayıtForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -179,11 +188,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Tasarımlar\YüklenmForm.resx">
-      <DependentUpon>YüklenmForm.cs</DependentUpon>
+    <EmbeddedResource Include="Tasarımlar\YuklenmForm.resx">
+      <DependentUpon>YuklenmForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Tasarımlar\Ödeme.resx">
-      <DependentUpon>Ödeme.cs</DependentUpon>
+    <EmbeddedResource Include="Tasarımlar\Odeme.resx">
+      <DependentUpon>Odeme.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

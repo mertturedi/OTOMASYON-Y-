@@ -10,31 +10,25 @@ using System.Data.SqlClient;
 
 namespace WindowsFormsApp1
 {
-    class sqlBağlanti
+   public class sqlBağlanti
     {
-        private string yol;
-        public SqlConnection baglanti; // Bağlantı
-        public DataTable tablo; // Tablo 
-        public SqlDataAdapter adaptor; // 
-        public SqlDataReader okuyucu;
-        public SqlCommand komut;
-        //  static string conString;
-        DataTable tbl = new DataTable();
 
-        public sqlBağlanti()
+        SqlConnection kom = new SqlConnection("server=MERT-BILGISAYAR\\SQLEXPRESS; Initial Catalog=MertTT;Integrated Security=SSPI");
+        public void Connect()
         {
-            // yol = ConfigurationManager.ConnectionStrings["Veriyolu"].ConnectionString;
-            // yol = "Data Source = 10.150.0.22; Initial Catalog = OkulOtomasyon; Integrated Security = SSPI; User ID = sa; Password = MEDIPOL";
-            yol = "server=MERT-BILGISAYAR\\SQLEXPRESS; Initial Catalog=MertTT;Integrated Security=SSPI;";
-        }
-
-        public void Baglan()
-        {
-            baglanti = new SqlConnection(yol);
-            if (baglanti.State == ConnectionState.Closed)
+            if (kom.State == ConnectionState.Closed)
             {
-                baglanti.Open();
+                kom.Open();
             }
         }
+
+
+
+
+
+
+
+
+
     }
 }
