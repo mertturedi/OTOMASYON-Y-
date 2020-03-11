@@ -18,10 +18,12 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
+        public static string mert ;
+
         private void button1_Click(object sender, EventArgs e)
         {
             SqlConnection con,kom;
-            SqlCommand cmd, cmk;
+            SqlCommand cmd, cmk,cml;
             SqlDataReader dr, dc;
 
             
@@ -32,11 +34,12 @@ namespace WindowsFormsApp1
             kom = new SqlConnection("server=MERT-BILGISAYAR\\SQLEXPRESS; Initial Catalog=MertTT;Integrated Security=SSPI");
             cmd = new SqlCommand();
             cmk = new SqlCommand();
+            cml = new SqlCommand();
             con.Open();
             kom.Open();
             cmd.Connection = con;
             cmk.Connection = kom;
-         
+           
            
 
 
@@ -44,6 +47,7 @@ namespace WindowsFormsApp1
             cmd.CommandText = "SELECT * FROM tbl_kullaniciKayit where  KADI='" + textBox1.Text + "' AND SİFRE='" + textBox2.Text + "'AND KYETKİ = 'Y'";
             dr = cmd.ExecuteReader();
             dc = cmk.ExecuteReader();
+             mert = textBox1.Text;
            
             if (dr.Read())
             {
@@ -51,6 +55,7 @@ namespace WindowsFormsApp1
             YöneticiPaneliForm frm = new YöneticiPaneliForm();
             this.Hide();
             frm.Show();
+                
             }
             else if(dc.Read())
             {
@@ -58,6 +63,8 @@ namespace WindowsFormsApp1
                 KullaniciPanel grş = new KullaniciPanel();
                 this.Hide();
                 grş.Show();
+             
+
             }
             else
             {

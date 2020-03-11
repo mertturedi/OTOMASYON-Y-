@@ -76,6 +76,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.button21 = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -113,6 +116,7 @@
             this.button1.Size = new System.Drawing.Size(50, 51);
             this.button1.TabIndex = 24;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // ımageList1
             // 
@@ -153,32 +157,32 @@
             this.oTOBÜS2ToolStripMenuItem,
             this.oTOBÜS3ToolStripMenuItem});
             this.oTOBÜS1ToolStripMenuItem.Name = "oTOBÜS1ToolStripMenuItem";
-            this.oTOBÜS1ToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
+            this.oTOBÜS1ToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
             this.oTOBÜS1ToolStripMenuItem.Text = "OTOBÜS SEÇ";
             this.oTOBÜS1ToolStripMenuItem.Click += new System.EventHandler(this.oTOBÜS1ToolStripMenuItem_Click);
             // 
             // oTOBÜS1ToolStripMenuItem1
             // 
             this.oTOBÜS1ToolStripMenuItem1.Name = "oTOBÜS1ToolStripMenuItem1";
-            this.oTOBÜS1ToolStripMenuItem1.Size = new System.Drawing.Size(126, 22);
+            this.oTOBÜS1ToolStripMenuItem1.Size = new System.Drawing.Size(129, 22);
             this.oTOBÜS1ToolStripMenuItem1.Text = "OTOBÜS 1";
             // 
             // oTOBÜS2ToolStripMenuItem
             // 
             this.oTOBÜS2ToolStripMenuItem.Name = "oTOBÜS2ToolStripMenuItem";
-            this.oTOBÜS2ToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.oTOBÜS2ToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.oTOBÜS2ToolStripMenuItem.Text = "OTOBÜS 2";
             // 
             // oTOBÜS3ToolStripMenuItem
             // 
             this.oTOBÜS3ToolStripMenuItem.Name = "oTOBÜS3ToolStripMenuItem";
-            this.oTOBÜS3ToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.oTOBÜS3ToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.oTOBÜS3ToolStripMenuItem.Text = "OTOBÜS 3";
             // 
             // aNASAYFAYADÖNToolStripMenuItem
             // 
             this.aNASAYFAYADÖNToolStripMenuItem.Name = "aNASAYFAYADÖNToolStripMenuItem";
-            this.aNASAYFAYADÖNToolStripMenuItem.Size = new System.Drawing.Size(119, 20);
+            this.aNASAYFAYADÖNToolStripMenuItem.Size = new System.Drawing.Size(123, 20);
             this.aNASAYFAYADÖNToolStripMenuItem.Text = "ANASAYFAYA DÖN";
             // 
             // sORUNBİLDİRToolStripMenuItem
@@ -258,7 +262,7 @@
             // 
             // button7
             // 
-            this.button7.BackColor = System.Drawing.Color.Cyan;
+            this.button7.BackColor = System.Drawing.Color.Transparent;
             this.button7.ForeColor = System.Drawing.Color.Black;
             this.button7.ImageKey = "91605-200.png";
             this.button7.ImageList = this.ımageList1;
@@ -279,6 +283,7 @@
             this.button8.Size = new System.Drawing.Size(50, 51);
             this.button8.TabIndex = 35;
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button9
             // 
@@ -436,6 +441,9 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.listBox1);
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.textBox1);
@@ -448,7 +456,7 @@
             this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(296, 61);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(486, 119);
+            this.groupBox1.Size = new System.Drawing.Size(486, 168);
             this.groupBox1.TabIndex = 55;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "SEÇİM YAPINIZ";
@@ -554,6 +562,32 @@
             this.button21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button21.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button21.UseVisualStyleBackColor = false;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(161, 104);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(84, 30);
+            this.listBox1.TabIndex = 60;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(32, 118);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(123, 13);
+            this.label7.TabIndex = 64;
+            this.label7.Text = "SEÇİLEN KOLTUK NO :";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(278, 113);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.TabIndex = 65;
             // 
             // Form3
             // 
@@ -657,5 +691,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBox3;
     }
 }
