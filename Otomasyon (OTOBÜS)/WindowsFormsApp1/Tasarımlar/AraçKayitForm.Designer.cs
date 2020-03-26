@@ -42,15 +42,14 @@
             this.label4 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -84,14 +83,14 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(112, 53);
+            this.textBox1.Location = new System.Drawing.Point(111, 53);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 29;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(112, 128);
+            this.textBox2.Location = new System.Drawing.Point(111, 128);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 31;
@@ -109,7 +108,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(112, 92);
+            this.textBox3.Location = new System.Drawing.Point(111, 92);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 33;
@@ -127,7 +126,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(112, 164);
+            this.textBox4.Location = new System.Drawing.Point(111, 164);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(100, 20);
             this.textBox4.TabIndex = 35;
@@ -145,7 +144,7 @@
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(112, 205);
+            this.textBox5.Location = new System.Drawing.Point(111, 205);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(100, 20);
             this.textBox5.TabIndex = 37;
@@ -160,14 +159,6 @@
             this.label5.Size = new System.Drawing.Size(93, 13);
             this.label5.TabIndex = 36;
             this.label5.Text = "KOLTUK SAYISI :";
-            // 
-            // dataGridView3
-            // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(238, 72);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(163, 165);
-            this.dataGridView3.TabIndex = 38;
             // 
             // textBox6
             // 
@@ -213,6 +204,7 @@
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // ımageList1
             // 
@@ -226,17 +218,25 @@
             this.ımageList1.Images.SetKeyName(5, "sales_marketing_money_pouch_-512.png");
             this.ımageList1.Images.SetKeyName(6, "Actions-list-add-icon.png");
             // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(238, 72);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(163, 165);
+            this.richTextBox1.TabIndex = 75;
+            this.richTextBox1.Text = "";
+            // 
             // Form7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkRed;
             this.ClientSize = new System.Drawing.Size(438, 356);
+            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.dataGridView3);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox4);
@@ -255,7 +255,6 @@
             this.Text = "ARAÇ KAYIT EKRANI";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -275,11 +274,11 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.ImageList ımageList1;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }

@@ -36,7 +36,7 @@ namespace WindowsFormsApp1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form3 frm = new Form3();
+            BiletSatForm frm = new BiletSatForm();
             //this.Hide();
             frm.Show();
         }
@@ -45,7 +45,7 @@ namespace WindowsFormsApp1
         {
             KullanıcıGirişForm frm = new KullanıcıGirişForm();
             frm.Show();
-            this.Hide();
+            //this.Hide();
          
 
 

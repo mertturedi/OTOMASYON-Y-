@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BiletSatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BiletSatForm.Designer.cs">
+      <DependentUpon>BiletSatForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tasarımlar\SifreEkrani.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +146,9 @@
     <Compile Include="Tasarımlar\Odeme.Designer.cs">
       <DependentUpon>Odeme.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BiletSatForm.resx">
+      <DependentUpon>BiletSatForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tasarımlar\SifreEkrani.resx">
       <DependentUpon>SifreEkrani.cs</DependentUpon>
     </EmbeddedResource>
@@ -187,6 +196,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Tasarımlar\YuklenmForm.resx">
       <DependentUpon>YuklenmForm.cs</DependentUpon>
@@ -206,6 +216,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maps1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

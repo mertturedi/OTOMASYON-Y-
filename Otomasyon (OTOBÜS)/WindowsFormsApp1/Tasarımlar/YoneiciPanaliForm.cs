@@ -66,7 +66,7 @@ namespace WindowsFormsApp1
 
         private void button4_Click(object sender, EventArgs e)
         {
-            MüşteriBilgi al = new MüşteriBilgi();
+            BiletSatForm al = new BiletSatForm();
             al.Show();
         }
     }

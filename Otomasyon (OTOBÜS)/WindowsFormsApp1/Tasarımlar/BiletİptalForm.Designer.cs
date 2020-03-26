@@ -152,6 +152,7 @@
             this.button21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button21.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button21.UseVisualStyleBackColor = false;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // ımageList1
             // 

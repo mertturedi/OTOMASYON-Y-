@@ -40,6 +40,7 @@
             this.ımageList2 = new System.Windows.Forms.ImageList(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -47,7 +48,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -93,7 +93,7 @@
             this.button21.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button21.ImageIndex = 2;
             this.button21.ImageList = this.ımageList1;
-            this.button21.Location = new System.Drawing.Point(227, 192);
+            this.button21.Location = new System.Drawing.Point(227, 176);
             this.button21.Name = "button21";
             this.button21.Size = new System.Drawing.Size(126, 31);
             this.button21.TabIndex = 59;
@@ -120,7 +120,7 @@
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.ImageIndex = 3;
             this.button3.ImageList = this.ımageList1;
-            this.button3.Location = new System.Drawing.Point(21, 192);
+            this.button3.Location = new System.Drawing.Point(21, 176);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(126, 31);
             this.button3.TabIndex = 72;
@@ -137,7 +137,7 @@
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.ImageIndex = 4;
             this.button4.ImageList = this.ımageList1;
-            this.button4.Location = new System.Drawing.Point(227, 243);
+            this.button4.Location = new System.Drawing.Point(227, 227);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(126, 31);
             this.button4.TabIndex = 73;
@@ -156,9 +156,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(239, 48);
+            this.pictureBox1.Location = new System.Drawing.Point(21, 33);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(114, 117);
+            this.pictureBox1.Size = new System.Drawing.Size(114, 113);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 74;
             this.pictureBox1.TabStop = false;
@@ -171,12 +171,21 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.groupBox1.Location = new System.Drawing.Point(21, 48);
+            this.groupBox1.Location = new System.Drawing.Point(154, 51);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(199, 117);
+            this.groupBox1.Size = new System.Drawing.Size(199, 95);
             this.groupBox1.TabIndex = 75;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "YÖNETİCİ BİLGİLERİ";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 74);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 66;
+            this.label2.Text = "label2";
             // 
             // label5
             // 
@@ -214,7 +223,7 @@
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.ImageIndex = 5;
             this.button1.ImageList = this.ımageList1;
-            this.button1.Location = new System.Drawing.Point(21, 243);
+            this.button1.Location = new System.Drawing.Point(21, 227);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(126, 31);
             this.button1.TabIndex = 76;
@@ -231,7 +240,7 @@
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.ImageIndex = 6;
             this.button2.ImageList = this.ımageList1;
-            this.button2.Location = new System.Drawing.Point(21, 290);
+            this.button2.Location = new System.Drawing.Point(21, 274);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(126, 31);
             this.button2.TabIndex = 77;
@@ -265,7 +274,7 @@
             this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button7.ImageIndex = 5;
             this.button7.ImageList = this.ımageList1;
-            this.button7.Location = new System.Drawing.Point(227, 290);
+            this.button7.Location = new System.Drawing.Point(227, 274);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(126, 31);
             this.button7.TabIndex = 80;
@@ -274,15 +283,6 @@
             this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 84);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 66;
-            this.label2.Text = "label2";
             // 
             // YöneticiPaneliForm
             // 

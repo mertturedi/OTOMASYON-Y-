@@ -64,3 +64,4 @@ C:\Users\Mert\Desktop\Otomasyon (OTOBÜS)\WindowsFormsApp1\obj\Debug\WindowsForm
 C:\Users\Mert\Desktop\Otomasyon (OTOBÜS)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\Mert\Desktop\Otomasyon (OTOBÜS)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 C:\Users\Mert\Desktop\Otomasyon (OTOBÜS)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.SifreEkrani.resources
+C:\Users\Mert\Desktop\Otomasyon (OTOBÜS)\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.BiletSatForm.resources
