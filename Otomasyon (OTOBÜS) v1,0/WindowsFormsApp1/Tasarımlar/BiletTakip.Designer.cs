@@ -94,8 +94,11 @@
             this.Controls.Add(this.dataGridView3);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.dataGridView2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "BiletTakip";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BiletTakip";
             this.Load += new System.EventHandler(this.BiletTakip_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();

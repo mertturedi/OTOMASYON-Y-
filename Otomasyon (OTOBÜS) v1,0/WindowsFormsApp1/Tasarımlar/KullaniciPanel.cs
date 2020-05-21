@@ -12,6 +12,7 @@ namespace WindowsFormsApp1
 {
     public partial class KullaniciPanel : Form
     {
+        public static string mert1;
         public KullaniciPanel()
         {
             InitializeComponent();
@@ -36,6 +37,25 @@ namespace WindowsFormsApp1
         }
 
         private void button21_Click(object sender, EventArgs e)
+        {
+            YardimDestekKullaniciForm yrdm = new YardimDestekKullaniciForm();
+            yrdm.Show();
+        }
+
+        private void KullaniciPanel_Load(object sender, EventArgs e)
+        {
+
+            label4.Text = KullanıcıGirişForm.mert;
+            label2.Text = DateTime.Now.ToString();
+            mert1 = label4.Text;
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
         {
 
         }

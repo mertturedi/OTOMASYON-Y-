@@ -148,7 +148,9 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.dataGridView2);
             this.ForeColor = System.Drawing.Color.DarkRed;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "KayıtSilmeForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "KULLANICI SİLME  EKRANI";

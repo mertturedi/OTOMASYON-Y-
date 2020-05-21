@@ -17,7 +17,7 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
-
+        public static string mert1;
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -28,7 +28,7 @@ namespace WindowsFormsApp1
            
             label4.Text = KullanıcıGirişForm.mert;
             label2.Text= DateTime.Now.ToString();
-
+            mert1 = label4.Text;
 
 
 
@@ -85,6 +85,22 @@ namespace WindowsFormsApp1
         private void label2_Click(object sender, EventArgs e)
         {
          
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            yardımdestek yardım = new yardımdestek();
+            yardım.Show();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

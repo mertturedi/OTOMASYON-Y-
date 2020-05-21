@@ -48,6 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form112.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form112.Designer.cs">
+      <DependentUpon>Form112.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tasarımlar\BiletTakip.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,11 +109,11 @@
     <Compile Include="Tasarımlar\BiletİptalForm.Designer.cs">
       <DependentUpon>BiletİptalForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tasarımlar\BiletSatinalForm.cs">
+    <Compile Include="Tasarımlar\YardimDestekKullaniciForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tasarımlar\BiletSatinalForm.Designer.cs">
-      <DependentUpon>BiletSatinalForm.cs</DependentUpon>
+    <Compile Include="Tasarımlar\YardimDestekKullaniciForm.Designer.cs">
+      <DependentUpon>YardimDestekKullaniciForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Tasarımlar\YoneiciPanaliForm.cs">
       <SubType>Form</SubType>
@@ -133,11 +139,11 @@
     <Compile Include="Tasarımlar\AraçKayitForm.Designer.cs">
       <DependentUpon>AraçKayitForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tasarımlar\YoneticiKayıtForm.cs">
+    <Compile Include="Tasarımlar\yardımdestekForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tasarımlar\YoneticiKayıtForm.Designer.cs">
-      <DependentUpon>YoneticiKayıtForm.cs</DependentUpon>
+    <Compile Include="Tasarımlar\yardımdestekForm.Designer.cs">
+      <DependentUpon>yardımdestekForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -153,6 +159,9 @@
     <Compile Include="Tasarımlar\OtobüsTakipForm.Designer.cs">
       <DependentUpon>OtobüsTakipForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Form112.resx">
+      <DependentUpon>Form112.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tasarımlar\BiletTakip.resx">
       <DependentUpon>BiletTakip.cs</DependentUpon>
     </EmbeddedResource>
@@ -180,8 +189,8 @@
     <EmbeddedResource Include="Tasarımlar\BiletİptalForm.resx">
       <DependentUpon>BiletİptalForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Tasarımlar\BiletSatinalForm.resx">
-      <DependentUpon>BiletSatinalForm.cs</DependentUpon>
+    <EmbeddedResource Include="Tasarımlar\YardimDestekKullaniciForm.resx">
+      <DependentUpon>YardimDestekKullaniciForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tasarımlar\YoneiciPanaliForm.resx">
       <DependentUpon>YoneiciPanaliForm.cs</DependentUpon>
@@ -195,8 +204,8 @@
     <EmbeddedResource Include="Tasarımlar\AraçKayitForm.resx">
       <DependentUpon>AraçKayitForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Tasarımlar\YoneticiKayıtForm.resx">
-      <DependentUpon>YoneticiKayıtForm.cs</DependentUpon>
+    <EmbeddedResource Include="Tasarımlar\yardımdestekForm.resx">
+      <DependentUpon>yardımdestekForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

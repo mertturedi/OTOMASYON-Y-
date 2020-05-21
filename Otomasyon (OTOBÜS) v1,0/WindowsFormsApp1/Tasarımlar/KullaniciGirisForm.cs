@@ -13,6 +13,7 @@ namespace WindowsFormsApp1
 {
     public partial class KullanıcıGirişForm : Form
     {
+
         public KullanıcıGirişForm()
         {
             InitializeComponent();

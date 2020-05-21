@@ -25,7 +25,7 @@ namespace WindowsFormsApp1
 
             try
             {
-                if (textBox1.Text != "" || comboBox1.Text != "" || textBox2.Text != "" || textBox4.Text != "" || textBox5.Text != "" || textBox6.Text != "" || richTextBox1.Text != "")
+                if (textBox1.Text != "" && comboBox1.Text != "" && textBox2.Text != "" && textBox4.Text != "" && textBox5.Text != "" && textBox6.Text != "" && richTextBox1.Text != "")
                 {
                     SqlConnection con;
                     SqlCommand cmd;
@@ -67,10 +67,11 @@ namespace WindowsFormsApp1
                 }
             
             }
-            catch (Exception)
+            catch (Exception hata)
             {
+                
                 MessageBox.Show("HATA...");
-                throw;
+              
             }
 
           

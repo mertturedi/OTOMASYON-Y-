@@ -39,23 +39,25 @@
             this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(52, 97);
+            this.label2.Location = new System.Drawing.Point(9, 64);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(34, 13);
+            this.label2.Size = new System.Drawing.Size(73, 13);
             this.label2.TabIndex = 40;
-            this.label2.Text = "Şifre :";
+            this.label2.Text = "Şifre              :";
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(92, 94);
+            this.textBox2.Location = new System.Drawing.Point(84, 61);
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '#';
             this.textBox2.Size = new System.Drawing.Size(257, 20);
@@ -65,15 +67,15 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(17, 59);
+            this.label1.Location = new System.Drawing.Point(9, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 13);
+            this.label1.Size = new System.Drawing.Size(73, 13);
             this.label1.TabIndex = 38;
-            this.label1.Text = "Kullanıcı Adı :";
+            this.label1.Text = "Kullanıcı Adı  :";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(92, 56);
+            this.textBox1.Location = new System.Drawing.Point(84, 23);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(257, 20);
             this.textBox1.TabIndex = 37;
@@ -82,7 +84,7 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(-17, 174);
+            this.dataGridView1.Location = new System.Drawing.Point(-17, 163);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(817, 50);
             this.dataGridView1.TabIndex = 43;
@@ -93,7 +95,7 @@
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Location = new System.Drawing.Point(-17, -13);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(817, 44);
+            this.dataGridView2.Size = new System.Drawing.Size(817, 32);
             this.dataGridView2.TabIndex = 44;
             // 
             // ımageList1
@@ -116,7 +118,7 @@
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.ImageKey = "images.png";
             this.button1.ImageList = this.ımageList1;
-            this.button1.Location = new System.Drawing.Point(237, 128);
+            this.button1.Location = new System.Drawing.Point(229, 95);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(112, 23);
             this.button1.TabIndex = 41;
@@ -129,36 +131,48 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.DarkRed;
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Location = new System.Drawing.Point(17, 133);
+            this.label3.Location = new System.Drawing.Point(9, 100);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(81, 13);
             this.label3.TabIndex = 45;
             this.label3.Text = "Şifremi Unuttum";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Location = new System.Drawing.Point(8, 23);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(354, 131);
+            this.groupBox1.TabIndex = 46;
+            this.groupBox1.TabStop = false;
+            // 
             // KullanıcıGirişForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkRed;
-            this.ClientSize = new System.Drawing.Size(370, 205);
-            this.Controls.Add(this.label3);
+            this.ClientSize = new System.Drawing.Size(370, 181);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "KullanıcıGirişForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "KULLANICI GİRİŞ";
             this.Load += new System.EventHandler(this.KullanıcıGirişForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -172,5 +186,6 @@
         private System.Windows.Forms.ImageList ımageList1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

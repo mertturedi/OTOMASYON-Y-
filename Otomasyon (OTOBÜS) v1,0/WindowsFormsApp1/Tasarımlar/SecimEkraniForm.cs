@@ -45,7 +45,7 @@ namespace WindowsFormsApp1
         {
             KullanıcıGirişForm frm = new KullanıcıGirişForm();
             frm.Show();
-            this.Hide();
+            //this.Hide();
          
 
 

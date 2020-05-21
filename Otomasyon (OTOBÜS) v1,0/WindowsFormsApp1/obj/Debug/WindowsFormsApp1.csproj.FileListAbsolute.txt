@@ -76,12 +76,10 @@ C:\Users\Mert\Desktop\Otomasyon (OTOBÜS) v1,0\WindowsFormsApp1\obj\Debug\Window
 C:\Users\Mert\Desktop\Otomasyon (OTOBÜS) v1,0\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.KullaniciPanel.resources
 C:\Users\Mert\Desktop\Otomasyon (OTOBÜS) v1,0\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.KullanıcıGirişForm.resources
 C:\Users\Mert\Desktop\Otomasyon (OTOBÜS) v1,0\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.SeçimEkranıForm.resources
-C:\Users\Mert\Desktop\Otomasyon (OTOBÜS) v1,0\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form3.resources
 C:\Users\Mert\Desktop\Otomasyon (OTOBÜS) v1,0\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.YöneticiPaneliForm.resources
 C:\Users\Mert\Desktop\Otomasyon (OTOBÜS) v1,0\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.KullanıcıKayıtForm.resources
 C:\Users\Mert\Desktop\Otomasyon (OTOBÜS) v1,0\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.KayıtSilmeForm.resources
 C:\Users\Mert\Desktop\Otomasyon (OTOBÜS) v1,0\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form7.resources
-C:\Users\Mert\Desktop\Otomasyon (OTOBÜS) v1,0\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form8.resources
 C:\Users\Mert\Desktop\Otomasyon (OTOBÜS) v1,0\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
 C:\Users\Mert\Desktop\Otomasyon (OTOBÜS) v1,0\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.YüklenmForm.resources
 C:\Users\Mert\Desktop\Otomasyon (OTOBÜS) v1,0\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
@@ -92,3 +90,6 @@ C:\Users\Mert\Desktop\Otomasyon (OTOBÜS) v1,0\WindowsFormsApp1\obj\Debug\Window
 C:\Users\Mert\Desktop\Otomasyon (OTOBÜS) v1,0\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AraçSil.resources
 C:\Users\Mert\Desktop\Otomasyon (OTOBÜS) v1,0\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Biletİptal.resources
 C:\Users\Mert\Desktop\Otomasyon (OTOBÜS) v1,0\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Aracguncelleme.resources
+C:\Users\Mert\Desktop\Otomasyon (OTOBÜS) v1,0\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.yardımdestek.resources
+C:\Users\Mert\Desktop\Otomasyon (OTOBÜS) v1,0\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.YardimDestekKullaniciForm.resources
+C:\Users\Mert\Desktop\Otomasyon (OTOBÜS) v1,0\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form112.resources
