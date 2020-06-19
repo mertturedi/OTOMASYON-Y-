@@ -49,8 +49,9 @@ namespace WindowsFormsApp1
             dr = cmd.ExecuteReader();
             dc = cmk.ExecuteReader();
             mert = textBox1.Text;
-           
-            if (dr.Read())
+            if (textBox1.Text != "" && textBox2.Text != "")
+            {
+              if (dr.Read())
             {
             
             YöneticiPaneliForm frm = new YöneticiPaneliForm();
@@ -69,12 +70,18 @@ namespace WindowsFormsApp1
             }
             else
             {
-                MessageBox.Show("Hatalı Giriş !");
+                MessageBox.Show("Lütfen Alanları Kontrol Ediniz Şifreniz Yada Kullanıcı Adınız Hatalı... !");
             }
           
             con.Close();
             kom.Close();
 
+            }
+            else
+            {
+                MessageBox.Show("Alanları Doldurunuz...");
+            }
+           
 
         }
 

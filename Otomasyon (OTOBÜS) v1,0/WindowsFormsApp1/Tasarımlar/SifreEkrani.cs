@@ -42,10 +42,10 @@ namespace WindowsFormsApp1
 
                 SqlCommand komut = new System.Data.SqlClient.SqlCommand(sorgu, baglanti);
                 komut.ExecuteNonQuery();
-                DataTable  tablo = new DataTable();
+                DataTable tablo = new DataTable();
                 SqlDataAdapter adaptor = new System.Data.SqlClient.SqlDataAdapter(komut);
                 adaptor.Fill(tablo);
-               
+
 
 
                 aktKod = rnd.Next(10000000, 99999999).ToString();
@@ -58,7 +58,7 @@ namespace WindowsFormsApp1
                     {
                         MailMessage message = new MailMessage();
                         SmtpClient istemci = new SmtpClient();
-                        istemci.Credentials = new NetworkCredential("iksvinfo@gmail.com", "iksvESTP34");
+                        istemci.Credentials = new NetworkCredential("otomasyonV1@gmail.com", "o123456789.");
                         istemci.Port = 587;
                         istemci.Host = "smtp.gmail.com";
                         istemci.EnableSsl = true;
@@ -72,7 +72,7 @@ namespace WindowsFormsApp1
 
 
                         //baglanti.Open();
-                       
+
                         //string sorgu2 = "UPDATE tbl_KullaniciKayit SET Sifre='" + aktKod + "' WHERE Email='" + kullanici.Mail + "'";
                         //SqlCommand cmd = new SqlCommand(sorgu2, baglanti);
                         //cmd.ExecuteNonQuery();
@@ -93,9 +93,7 @@ namespace WindowsFormsApp1
                 else
                 {
 
-
-                    label2.Visible = true;
-                    label2.Text = "Kayıtlı Email adresi bulunamadı";
+                    MessageBox.Show("Kayıtlı Email adresi bulunamadı");
                 }
 
                 baglanti.Close();
@@ -105,7 +103,7 @@ namespace WindowsFormsApp1
             catch (Exception hata)
             {
                 label2.Visible = true;
-                label2.Text = "Hata kodu : " + hata.Message;
+                MessageBox.Show(hata.Message);
             }
 
 
@@ -165,7 +163,7 @@ namespace WindowsFormsApp1
 
         }
 
-    
+
 
         private void SifreEkrani_Load(object sender, EventArgs e)
         {
@@ -175,21 +173,20 @@ namespace WindowsFormsApp1
 
 
 
-        //MailMessage mesajim = new MailMessage();
-        //SmtpClient istemci = new SmtpClient();
-        //istemci.Credentials = new System.Net.NetworkCredential("sberk291@gmail.com", "mert5261..");
-        //istemci.Port = 587;
-        //istemci.Host = "smtp.live.com";
-        //istemci.EnableSsl = true;
-        //mesajim.To.Add(textBox1.Text);
-        //mesajim.From = new MailAddress ("sberk291@gmail.com");
-        //mesajim.Subject = "OTOBÜS OTOMASYON";
-        //mesajim.Body = listBox1.Text;
+    //MailMessage mesajim = new MailMessage();
+    //SmtpClient istemci = new SmtpClient();
+    //istemci.Credentials = new System.Net.NetworkCredential("sberk291@gmail.com", "mert5261..");
+    //istemci.Port = 587;
+    //istemci.Host = "smtp.live.com";
+    //istemci.EnableSsl = true;
+    //mesajim.To.Add(textBox1.Text);
+    //mesajim.From = new MailAddress ("sberk291@gmail.com");
+    //mesajim.Subject = "OTOBÜS OTOMASYON";
+    //mesajim.Body = listBox1.Text;
 
 
 
 
 
 
-    }
-
+}

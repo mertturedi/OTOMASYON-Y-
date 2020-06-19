@@ -179,7 +179,7 @@ namespace WindowsFormsApp1
                     cmd.Parameters.AddWithValue("@başlık", textBox3.Text);
                     cmd.ExecuteNonQuery();
                     con.Close();
-                    MessageBox.Show(" İşlem Gerçekleşmiştir...");
+                    MessageBox.Show(" Mail Gönderilmiştir...");
                    
                
 
@@ -206,6 +206,46 @@ namespace WindowsFormsApp1
         {
             Form112 frm112 = new Form112();
             frm112.Show();
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+            SqlConnection con;
+            SqlCommand cmd, cmk;
+            SqlDataReader dr;
+            con = new SqlConnection("server=DESKTOP-8JE6KH6\\SQLEXPRESS; Initial Catalog=MertTT;Integrated Security=SSPI");
+            cmd = new SqlCommand();
+            cmk = new SqlCommand();
+            con.Open();
+            cmd.Connection = con;
+
+
+            con = new SqlConnection("server=DESKTOP-8JE6KH6\\SQLEXPRESS; Initial Catalog=MertTT;Integrated Security=SSPI");
+            cmd = new SqlCommand();
+            con.Open();
+            cmd.Connection = con;
+            cmd.CommandText = "Delete tbl_GelenMesaj where  Cevap='" + textBox4.Text + "'";
+            cmd.ExecuteNonQuery();
+            dr = cmd.ExecuteReader();
+            MessageBox.Show("SİLME İŞLEMİ BAŞARILI");
+
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
+
+            griddoldur();
+        }
+
+        private void dataGridView4_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            string deger2 = dataGridView4.CurrentRow.Cells["Cevap"].Value.ToString();
+            textBox4.Text = deger2;
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
 
         }
     }

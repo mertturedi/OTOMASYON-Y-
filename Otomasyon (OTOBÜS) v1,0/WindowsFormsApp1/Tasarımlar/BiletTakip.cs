@@ -28,7 +28,9 @@ namespace WindowsFormsApp1
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        
+
+        private void button1_Click_1(object sender, EventArgs e)
         {
             SqlDataAdapter da = new SqlDataAdapter();
             SqlCommand com = new SqlCommand();
@@ -36,12 +38,12 @@ namespace WindowsFormsApp1
             SqlConnection con;
             SqlCommand cmd;
             SqlDataReader dr;
-            con = new SqlConnection("server=MERT-BILGISAYAR\\SQLEXPRESS; Initial Catalog=MertTT;Integrated Security=SSPI");
-            da = new SqlDataAdapter("Select * From tbl_BileterSatis where Tarih= '" + textBox1.Text + "' ", con);
+            con = new SqlConnection("server=DESKTOP-8JE6KH6\\SQLEXPRESS; Initial Catalog=MertTT;Integrated Security=SSPI");
+            da = new SqlDataAdapter("Select * From tbl_BileterSatis where Tarih= '" + dateTimePicker1.Text + "' ", con);
             ds = new DataSet();
             con.Open();
-            da.Fill(ds, "kayıtlar");
-            dataGridView3.DataSource = ds.Tables["kayıtlar"];
+            da.Fill(ds, "otobüs");
+            dataGridView3.DataSource = ds.Tables["otobüs"];
             con.Close();
         }
     }

@@ -40,7 +40,7 @@ namespace WindowsFormsApp1
             message.Subject = "HATA BİLDİRİM"+" "+"("+textBox1.Text+")";
             message.Body = "HATA MESAJI   : " + richTextBox1.Text;
             istemci.Send(message);
-            MessageBox.Show("Aktivasyon kodu mail adresine gönderildi. Yönlendiriliyorsunuz ... Daha sonra şifrenizi güncellemeyi unutmayınız ...", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Mail Gönderildi...");
             }
             else
             {

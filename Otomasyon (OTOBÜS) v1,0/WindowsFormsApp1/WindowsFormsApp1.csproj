@@ -48,10 +48,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form112.cs">
+    <Compile Include="Tasarımlar\Form112.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form112.Designer.cs">
+    <Compile Include="Tasarımlar\Form112.Designer.cs">
       <DependentUpon>Form112.cs</DependentUpon>
     </Compile>
     <Compile Include="Tasarımlar\BiletTakip.cs">
@@ -159,7 +159,7 @@
     <Compile Include="Tasarımlar\OtobüsTakipForm.Designer.cs">
       <DependentUpon>OtobüsTakipForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form112.resx">
+    <EmbeddedResource Include="Tasarımlar\Form112.resx">
       <DependentUpon>Form112.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tasarımlar\BiletTakip.resx">

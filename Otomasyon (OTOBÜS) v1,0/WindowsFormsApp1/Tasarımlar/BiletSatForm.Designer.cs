@@ -79,6 +79,7 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label13 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
@@ -86,7 +87,6 @@
             this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -106,6 +106,12 @@
             this.Grdoldur = new System.Windows.Forms.DataGridView();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.KADIN = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.groupBox4.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -181,6 +187,7 @@
             this.checkBox46.TabIndex = 45;
             this.checkBox46.Text = "46";
             this.checkBox46.UseVisualStyleBackColor = false;
+            this.checkBox46.CheckedChanged += new System.EventHandler(this.checkBox46_CheckedChanged);
             // 
             // checkBox45
             // 
@@ -193,6 +200,7 @@
             this.checkBox45.TabIndex = 44;
             this.checkBox45.Text = "45";
             this.checkBox45.UseVisualStyleBackColor = false;
+            this.checkBox45.CheckedChanged += new System.EventHandler(this.checkBox45_CheckedChanged);
             // 
             // checkBox44
             // 
@@ -205,6 +213,7 @@
             this.checkBox44.TabIndex = 43;
             this.checkBox44.Text = "44";
             this.checkBox44.UseVisualStyleBackColor = false;
+            this.checkBox44.CheckedChanged += new System.EventHandler(this.checkBox44_CheckedChanged);
             // 
             // checkBox43
             // 
@@ -217,6 +226,7 @@
             this.checkBox43.TabIndex = 42;
             this.checkBox43.Text = "43";
             this.checkBox43.UseVisualStyleBackColor = false;
+            this.checkBox43.CheckedChanged += new System.EventHandler(this.checkBox43_CheckedChanged);
             // 
             // checkBox42
             // 
@@ -229,6 +239,7 @@
             this.checkBox42.TabIndex = 41;
             this.checkBox42.Text = "42";
             this.checkBox42.UseVisualStyleBackColor = false;
+            this.checkBox42.CheckedChanged += new System.EventHandler(this.checkBox42_CheckedChanged);
             // 
             // checkBox41
             // 
@@ -241,6 +252,7 @@
             this.checkBox41.TabIndex = 40;
             this.checkBox41.Text = "41";
             this.checkBox41.UseVisualStyleBackColor = false;
+            this.checkBox41.CheckedChanged += new System.EventHandler(this.checkBox41_CheckedChanged);
             // 
             // checkBox40
             // 
@@ -253,114 +265,124 @@
             this.checkBox40.TabIndex = 39;
             this.checkBox40.Text = "40";
             this.checkBox40.UseVisualStyleBackColor = false;
+            this.checkBox40.CheckedChanged += new System.EventHandler(this.checkBox40_CheckedChanged);
             // 
             // checkBox39
             // 
             this.checkBox39.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox39.BackColor = System.Drawing.Color.AliceBlue;
             this.checkBox39.ForeColor = System.Drawing.Color.Black;
-            this.checkBox39.Location = new System.Drawing.Point(15, 425);
+            this.checkBox39.Location = new System.Drawing.Point(12, 425);
             this.checkBox39.Name = "checkBox39";
-            this.checkBox39.Size = new System.Drawing.Size(42, 33);
+            this.checkBox39.Size = new System.Drawing.Size(45, 33);
             this.checkBox39.TabIndex = 38;
             this.checkBox39.Text = "39";
             this.checkBox39.UseVisualStyleBackColor = false;
+            this.checkBox39.CheckedChanged += new System.EventHandler(this.checkBox39_CheckedChanged);
             // 
             // checkBox38
             // 
             this.checkBox38.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox38.BackColor = System.Drawing.Color.AliceBlue;
             this.checkBox38.ForeColor = System.Drawing.Color.Black;
-            this.checkBox38.Location = new System.Drawing.Point(53, 384);
+            this.checkBox38.Location = new System.Drawing.Point(167, 384);
             this.checkBox38.Name = "checkBox38";
             this.checkBox38.Size = new System.Drawing.Size(44, 33);
             this.checkBox38.TabIndex = 37;
             this.checkBox38.Text = "38";
             this.checkBox38.UseVisualStyleBackColor = false;
+            this.checkBox38.CheckedChanged += new System.EventHandler(this.checkBox38_CheckedChanged);
             // 
             // checkBox37
             // 
             this.checkBox37.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox37.BackColor = System.Drawing.Color.AliceBlue;
             this.checkBox37.ForeColor = System.Drawing.Color.Black;
-            this.checkBox37.Location = new System.Drawing.Point(14, 384);
+            this.checkBox37.Location = new System.Drawing.Point(128, 384);
             this.checkBox37.Name = "checkBox37";
             this.checkBox37.Size = new System.Drawing.Size(44, 33);
             this.checkBox37.TabIndex = 36;
             this.checkBox37.Text = "37";
             this.checkBox37.UseVisualStyleBackColor = false;
+            this.checkBox37.CheckedChanged += new System.EventHandler(this.checkBox37_CheckedChanged);
             // 
             // checkBox36
             // 
             this.checkBox36.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox36.BackColor = System.Drawing.Color.AliceBlue;
             this.checkBox36.ForeColor = System.Drawing.Color.Black;
-            this.checkBox36.Location = new System.Drawing.Point(169, 384);
+            this.checkBox36.Location = new System.Drawing.Point(53, 386);
             this.checkBox36.Name = "checkBox36";
             this.checkBox36.Size = new System.Drawing.Size(44, 33);
             this.checkBox36.TabIndex = 35;
             this.checkBox36.Text = "36";
             this.checkBox36.UseVisualStyleBackColor = false;
+            this.checkBox36.CheckedChanged += new System.EventHandler(this.checkBox36_CheckedChanged);
             // 
             // checkBox35
             // 
             this.checkBox35.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox35.BackColor = System.Drawing.Color.AliceBlue;
             this.checkBox35.ForeColor = System.Drawing.Color.Black;
-            this.checkBox35.Location = new System.Drawing.Point(128, 384);
+            this.checkBox35.Location = new System.Drawing.Point(12, 386);
             this.checkBox35.Name = "checkBox35";
             this.checkBox35.Size = new System.Drawing.Size(44, 33);
             this.checkBox35.TabIndex = 34;
             this.checkBox35.Text = "35";
             this.checkBox35.UseVisualStyleBackColor = false;
+            this.checkBox35.CheckedChanged += new System.EventHandler(this.checkBox35_CheckedChanged);
             // 
             // checkBox34
             // 
             this.checkBox34.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox34.BackColor = System.Drawing.Color.AliceBlue;
             this.checkBox34.ForeColor = System.Drawing.Color.Black;
-            this.checkBox34.Location = new System.Drawing.Point(53, 345);
+            this.checkBox34.Location = new System.Drawing.Point(166, 345);
             this.checkBox34.Name = "checkBox34";
             this.checkBox34.Size = new System.Drawing.Size(44, 33);
             this.checkBox34.TabIndex = 33;
             this.checkBox34.Text = "34";
             this.checkBox34.UseVisualStyleBackColor = false;
+            this.checkBox34.CheckedChanged += new System.EventHandler(this.checkBox34_CheckedChanged);
             // 
             // checkBox33
             // 
             this.checkBox33.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox33.BackColor = System.Drawing.Color.AliceBlue;
             this.checkBox33.ForeColor = System.Drawing.Color.Black;
-            this.checkBox33.Location = new System.Drawing.Point(15, 345);
+            this.checkBox33.Location = new System.Drawing.Point(128, 345);
             this.checkBox33.Name = "checkBox33";
             this.checkBox33.Size = new System.Drawing.Size(44, 33);
             this.checkBox33.TabIndex = 32;
             this.checkBox33.Text = "33";
             this.checkBox33.UseVisualStyleBackColor = false;
+            this.checkBox33.CheckedChanged += new System.EventHandler(this.checkBox33_CheckedChanged);
             // 
             // checkBox32
             // 
             this.checkBox32.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox32.BackColor = System.Drawing.Color.AliceBlue;
             this.checkBox32.ForeColor = System.Drawing.Color.Black;
-            this.checkBox32.Location = new System.Drawing.Point(169, 345);
+            this.checkBox32.Location = new System.Drawing.Point(53, 345);
             this.checkBox32.Name = "checkBox32";
             this.checkBox32.Size = new System.Drawing.Size(44, 33);
             this.checkBox32.TabIndex = 31;
             this.checkBox32.Text = "32";
             this.checkBox32.UseVisualStyleBackColor = false;
+            this.checkBox32.CheckedChanged += new System.EventHandler(this.checkBox32_CheckedChanged);
             // 
             // checkBox31
             // 
             this.checkBox31.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox31.BackColor = System.Drawing.Color.AliceBlue;
             this.checkBox31.ForeColor = System.Drawing.Color.Black;
-            this.checkBox31.Location = new System.Drawing.Point(128, 345);
+            this.checkBox31.Location = new System.Drawing.Point(12, 345);
             this.checkBox31.Name = "checkBox31";
             this.checkBox31.Size = new System.Drawing.Size(44, 33);
             this.checkBox31.TabIndex = 30;
             this.checkBox31.Text = "31";
             this.checkBox31.UseVisualStyleBackColor = false;
+            this.checkBox31.CheckedChanged += new System.EventHandler(this.checkBox31_CheckedChanged);
             // 
             // checkBox30
             // 
@@ -373,6 +395,7 @@
             this.checkBox30.TabIndex = 29;
             this.checkBox30.Text = "30";
             this.checkBox30.UseVisualStyleBackColor = false;
+            this.checkBox30.CheckedChanged += new System.EventHandler(this.checkBox30_CheckedChanged);
             // 
             // checkBox29
             // 
@@ -385,6 +408,7 @@
             this.checkBox29.TabIndex = 28;
             this.checkBox29.Text = "29";
             this.checkBox29.UseVisualStyleBackColor = false;
+            this.checkBox29.CheckedChanged += new System.EventHandler(this.checkBox29_CheckedChanged);
             // 
             // checkBox28
             // 
@@ -397,6 +421,7 @@
             this.checkBox28.TabIndex = 27;
             this.checkBox28.Text = "28";
             this.checkBox28.UseVisualStyleBackColor = false;
+            this.checkBox28.CheckedChanged += new System.EventHandler(this.checkBox28_CheckedChanged);
             // 
             // checkBox27
             // 
@@ -409,6 +434,7 @@
             this.checkBox27.TabIndex = 26;
             this.checkBox27.Text = "27";
             this.checkBox27.UseVisualStyleBackColor = false;
+            this.checkBox27.CheckedChanged += new System.EventHandler(this.checkBox27_CheckedChanged);
             // 
             // checkBox26
             // 
@@ -421,6 +447,7 @@
             this.checkBox26.TabIndex = 25;
             this.checkBox26.Text = "26";
             this.checkBox26.UseVisualStyleBackColor = false;
+            this.checkBox26.CheckedChanged += new System.EventHandler(this.checkBox26_CheckedChanged);
             // 
             // checkBox25
             // 
@@ -433,6 +460,7 @@
             this.checkBox25.TabIndex = 24;
             this.checkBox25.Text = "25";
             this.checkBox25.UseVisualStyleBackColor = false;
+            this.checkBox25.CheckedChanged += new System.EventHandler(this.checkBox25_CheckedChanged);
             // 
             // checkBox24
             // 
@@ -445,6 +473,7 @@
             this.checkBox24.TabIndex = 23;
             this.checkBox24.Text = "24";
             this.checkBox24.UseVisualStyleBackColor = false;
+            this.checkBox24.CheckedChanged += new System.EventHandler(this.checkBox24_CheckedChanged);
             // 
             // checkBox23
             // 
@@ -457,6 +486,7 @@
             this.checkBox23.TabIndex = 22;
             this.checkBox23.Text = "23";
             this.checkBox23.UseVisualStyleBackColor = false;
+            this.checkBox23.CheckedChanged += new System.EventHandler(this.checkBox23_CheckedChanged);
             // 
             // checkBox22
             // 
@@ -469,6 +499,7 @@
             this.checkBox22.TabIndex = 21;
             this.checkBox22.Text = "22";
             this.checkBox22.UseVisualStyleBackColor = false;
+            this.checkBox22.CheckedChanged += new System.EventHandler(this.checkBox22_CheckedChanged);
             // 
             // checkBox21
             // 
@@ -481,6 +512,7 @@
             this.checkBox21.TabIndex = 20;
             this.checkBox21.Text = "21";
             this.checkBox21.UseVisualStyleBackColor = false;
+            this.checkBox21.CheckedChanged += new System.EventHandler(this.checkBox21_CheckedChanged);
             // 
             // checkBox20
             // 
@@ -493,6 +525,7 @@
             this.checkBox20.TabIndex = 19;
             this.checkBox20.Text = "20";
             this.checkBox20.UseVisualStyleBackColor = false;
+            this.checkBox20.CheckedChanged += new System.EventHandler(this.checkBox20_CheckedChanged);
             // 
             // checkBox19
             // 
@@ -505,6 +538,7 @@
             this.checkBox19.TabIndex = 18;
             this.checkBox19.Text = "19";
             this.checkBox19.UseVisualStyleBackColor = false;
+            this.checkBox19.CheckedChanged += new System.EventHandler(this.checkBox19_CheckedChanged);
             // 
             // checkBox18
             // 
@@ -517,6 +551,7 @@
             this.checkBox18.TabIndex = 17;
             this.checkBox18.Text = "18";
             this.checkBox18.UseVisualStyleBackColor = false;
+            this.checkBox18.CheckedChanged += new System.EventHandler(this.checkBox18_CheckedChanged);
             // 
             // checkBox17
             // 
@@ -529,6 +564,7 @@
             this.checkBox17.TabIndex = 16;
             this.checkBox17.Text = "17";
             this.checkBox17.UseVisualStyleBackColor = false;
+            this.checkBox17.CheckedChanged += new System.EventHandler(this.checkBox17_CheckedChanged);
             // 
             // checkBox16
             // 
@@ -541,6 +577,7 @@
             this.checkBox16.TabIndex = 15;
             this.checkBox16.Text = "16";
             this.checkBox16.UseVisualStyleBackColor = false;
+            this.checkBox16.CheckedChanged += new System.EventHandler(this.checkBox16_CheckedChanged);
             // 
             // checkBox15
             // 
@@ -553,6 +590,7 @@
             this.checkBox15.TabIndex = 14;
             this.checkBox15.Text = "15";
             this.checkBox15.UseVisualStyleBackColor = false;
+            this.checkBox15.CheckedChanged += new System.EventHandler(this.checkBox15_CheckedChanged);
             // 
             // checkBox14
             // 
@@ -565,6 +603,7 @@
             this.checkBox14.TabIndex = 13;
             this.checkBox14.Text = "14";
             this.checkBox14.UseVisualStyleBackColor = false;
+            this.checkBox14.CheckedChanged += new System.EventHandler(this.checkBox14_CheckedChanged);
             // 
             // checkBox13
             // 
@@ -577,6 +616,7 @@
             this.checkBox13.TabIndex = 12;
             this.checkBox13.Text = "13";
             this.checkBox13.UseVisualStyleBackColor = false;
+            this.checkBox13.CheckedChanged += new System.EventHandler(this.checkBox13_CheckedChanged);
             // 
             // checkBox12
             // 
@@ -589,6 +629,7 @@
             this.checkBox12.TabIndex = 11;
             this.checkBox12.Text = "12";
             this.checkBox12.UseVisualStyleBackColor = false;
+            this.checkBox12.CheckedChanged += new System.EventHandler(this.checkBox12_CheckedChanged);
             // 
             // checkBox11
             // 
@@ -601,6 +642,7 @@
             this.checkBox11.TabIndex = 10;
             this.checkBox11.Text = "11";
             this.checkBox11.UseVisualStyleBackColor = false;
+            this.checkBox11.CheckedChanged += new System.EventHandler(this.checkBox11_CheckedChanged);
             // 
             // checkBox10
             // 
@@ -613,6 +655,7 @@
             this.checkBox10.TabIndex = 9;
             this.checkBox10.Text = "10";
             this.checkBox10.UseVisualStyleBackColor = false;
+            this.checkBox10.CheckedChanged += new System.EventHandler(this.checkBox10_CheckedChanged);
             // 
             // checkBox9
             // 
@@ -625,6 +668,7 @@
             this.checkBox9.TabIndex = 8;
             this.checkBox9.Text = "9";
             this.checkBox9.UseVisualStyleBackColor = false;
+            this.checkBox9.CheckedChanged += new System.EventHandler(this.checkBox9_CheckedChanged);
             // 
             // checkBox8
             // 
@@ -637,6 +681,7 @@
             this.checkBox8.TabIndex = 7;
             this.checkBox8.Text = "8";
             this.checkBox8.UseVisualStyleBackColor = false;
+            this.checkBox8.CheckedChanged += new System.EventHandler(this.checkBox8_CheckedChanged);
             // 
             // checkBox7
             // 
@@ -649,6 +694,7 @@
             this.checkBox7.TabIndex = 6;
             this.checkBox7.Text = "7";
             this.checkBox7.UseVisualStyleBackColor = false;
+            this.checkBox7.CheckedChanged += new System.EventHandler(this.checkBox7_CheckedChanged);
             // 
             // checkBox6
             // 
@@ -661,6 +707,7 @@
             this.checkBox6.TabIndex = 5;
             this.checkBox6.Text = "6";
             this.checkBox6.UseVisualStyleBackColor = false;
+            this.checkBox6.CheckedChanged += new System.EventHandler(this.checkBox6_CheckedChanged);
             // 
             // checkBox5
             // 
@@ -673,6 +720,7 @@
             this.checkBox5.TabIndex = 4;
             this.checkBox5.Text = "5";
             this.checkBox5.UseVisualStyleBackColor = false;
+            this.checkBox5.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
             // 
             // checkBox4
             // 
@@ -685,6 +733,7 @@
             this.checkBox4.TabIndex = 3;
             this.checkBox4.Text = "4";
             this.checkBox4.UseVisualStyleBackColor = false;
+            this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
             // 
             // checkBox3
             // 
@@ -697,6 +746,7 @@
             this.checkBox3.TabIndex = 2;
             this.checkBox3.Text = "3";
             this.checkBox3.UseVisualStyleBackColor = false;
+            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
             // checkBox2
             // 
@@ -709,6 +759,7 @@
             this.checkBox2.TabIndex = 1;
             this.checkBox2.Text = "2";
             this.checkBox2.UseVisualStyleBackColor = false;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // checkBox1
             // 
@@ -722,6 +773,7 @@
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "1";
             this.checkBox1.UseVisualStyleBackColor = false;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // label13
             // 
@@ -736,13 +788,13 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.comboBox5);
             this.groupBox1.Controls.Add(this.label12);
             this.groupBox1.Controls.Add(this.comboBox4);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.comboBox3);
-            this.groupBox1.Controls.Add(this.comboBox2);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.textBox10);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
@@ -767,6 +819,14 @@
             this.groupBox1.Text = "Müşteri Kayıt Bilgileri";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // textBox2
+            // 
+            this.textBox2.Enabled = false;
+            this.textBox2.Location = new System.Drawing.Point(138, 232);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(280, 20);
+            this.textBox2.TabIndex = 70;
+            // 
             // comboBox5
             // 
             this.comboBox5.FormattingEnabled = true;
@@ -778,7 +838,7 @@
             "+"});
             this.comboBox5.Location = new System.Drawing.Point(138, 195);
             this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(149, 21);
+            this.comboBox5.Size = new System.Drawing.Size(281, 21);
             this.comboBox5.TabIndex = 69;
             // 
             // label12
@@ -795,11 +855,11 @@
             // 
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Items.AddRange(new object[] {
-            "Erkek",
-            "Kadın"});
+            "E",
+            "K"});
             this.comboBox4.Location = new System.Drawing.Point(138, 79);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(121, 21);
+            this.comboBox4.Size = new System.Drawing.Size(280, 21);
             this.comboBox4.TabIndex = 1;
             // 
             // button1
@@ -838,6 +898,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(281, 21);
             this.comboBox1.TabIndex = 8;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // comboBox3
             // 
@@ -854,46 +915,7 @@
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(280, 21);
             this.comboBox3.TabIndex = 7;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30"});
-            this.comboBox2.Location = new System.Drawing.Point(138, 229);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(281, 21);
-            this.comboBox2.TabIndex = 5;
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
             // label8
             // 
@@ -911,6 +933,7 @@
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(281, 20);
             this.textBox10.TabIndex = 9;
+            this.textBox10.TextChanged += new System.EventHandler(this.textBox10_TextChanged);
             // 
             // dateTimePicker1
             // 
@@ -1061,17 +1084,80 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.DarkRed;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(-40, 582);
+            this.dataGridView1.Location = new System.Drawing.Point(-41, 590);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1341, 56);
             this.dataGridView1.TabIndex = 108;
+            // 
+            // textBox5
+            // 
+            this.textBox5.BackColor = System.Drawing.Color.Red;
+            this.textBox5.Enabled = false;
+            this.textBox5.Location = new System.Drawing.Point(1115, 565);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(26, 20);
+            this.textBox5.TabIndex = 109;
+            // 
+            // textBox6
+            // 
+            this.textBox6.BackColor = System.Drawing.Color.Blue;
+            this.textBox6.Enabled = false;
+            this.textBox6.Location = new System.Drawing.Point(1191, 565);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(26, 20);
+            this.textBox6.TabIndex = 110;
+            // 
+            // KADIN
+            // 
+            this.KADIN.AutoSize = true;
+            this.KADIN.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.KADIN.Location = new System.Drawing.Point(1147, 568);
+            this.KADIN.Name = "KADIN";
+            this.KADIN.Size = new System.Drawing.Size(40, 13);
+            this.KADIN.TabIndex = 111;
+            this.KADIN.Text = "KADIN";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label14.Location = new System.Drawing.Point(1221, 568);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(43, 13);
+            this.label14.TabIndex = 112;
+            this.label14.Text = "ERKEK";
+            // 
+            // textBox7
+            // 
+            this.textBox7.BackColor = System.Drawing.Color.White;
+            this.textBox7.Enabled = false;
+            this.textBox7.Location = new System.Drawing.Point(1043, 565);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(26, 20);
+            this.textBox7.TabIndex = 113;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label11.Location = new System.Drawing.Point(1074, 568);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(29, 13);
+            this.label11.TabIndex = 114;
+            this.label11.Text = "BOŞ";
             // 
             // BiletSatForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(1297, 600);
+            this.ClientSize = new System.Drawing.Size(1297, 609);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.KADIN);
+            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.textBox5);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.label13);
@@ -1151,7 +1237,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
@@ -1172,5 +1257,12 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridView Grdoldur;
         private System.Windows.Forms.ImageList ımageList1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label KADIN;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Label label11;
     }
 }

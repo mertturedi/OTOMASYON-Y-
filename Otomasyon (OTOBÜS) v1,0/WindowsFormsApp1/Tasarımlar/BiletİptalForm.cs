@@ -54,7 +54,7 @@ namespace WindowsFormsApp1
                     dr = cmd.ExecuteReader();
                     if (dr.Read() == true)
                     {
-                        DialogResult durum = MessageBox.Show(textBox4.Text + "numaralı koltuğu silmek istediğinizden emin misiniz?", "Silme Onayı", MessageBoxButtons.YesNo);
+                        DialogResult durum = MessageBox.Show(textBox4.Text +" " +"numaralı koltuğu silmek istediğinizden emin misiniz?", "Silme Onayı", MessageBoxButtons.YesNo);
                         if (DialogResult.Yes == durum)
                         {
                             con = new SqlConnection("server=DESKTOP-8JE6KH6\\SQLEXPRESS; Initial Catalog=MertTT;Integrated Security=SSPI");
@@ -86,7 +86,7 @@ namespace WindowsFormsApp1
             }
             catch (Exception)
             {
-                MessageBox.Show("Hata(YANLIŞ BİLGİ)");
+                MessageBox.Show("Uyuşmayan Bilgi Alanları Kontrol Ediniz...");
 
             }
         }
